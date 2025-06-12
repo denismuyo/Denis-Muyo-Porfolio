@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Nzioka Muyo | Digital Marketer & Creative Director</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+            color: #3b82f6;
+        }
+        
+        .portfolio-item {
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">DENIS MUYO</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-800" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full px-4 py-2 shadow-lg">
+            <a href="#home" class="block py-2">Home</a>
+            <a href="#about" class="block py-2">About</a>
+            <a href="#services" class="block py-2">Services</a>
+            <a href="#portfolio" class="block py-2">Portfolio</a>
+            <a href="#testimonials" class="block py-2">Testimonials</a>
+            <a href="#contact" class="block py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Hi, I'm <span class="text-blue-600">Denis Nzioka Muyo</span> – I Grow Brands with Strategy, Content, and Design.</h1>
+                <p class="text-xl text-gray-600 mb-8">Digital Marketer • Creative Director • Founder @ VersaTech Global Solutions</p>
+                <a href="https://wa.me/254712165017" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 inline-block">
+                    <i class="fab fa-whatsapp mr-2"></i> Let's Talk on WhatsApp
+                </a>
+            </div>
+            <div class="md:w-1/2 fade-in" style="animation-delay: 0.3s;">
+                <img src="WhatsApp Image 2024-03-04 at 22.51.37_176dd3a5.jpg" alt="Denis Nzioka Muyo" class="rounded-lg shadow-2xl w-full md:max-w-md mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0">
+                    <div class="bg-blue-600 h-1 w-16 mb-4 mx-auto md:mx-0"></div>
+                    <h3 class="text-2xl font-semibold mb-4">Digital Marketer & Brand Strategist</h3>
+                    <p class="text-gray-600">Narok, Kenya</p>
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg mb-6">
+                        I'm a passionate digital marketer and brand strategist helping African businesses grow through smart content, social media, and visual design.
+                    </p>
+                    <p class="text-lg mb-6">
+                        With experience in real estate, food delivery, health, and community NGOs, I use design and storytelling to drive results and create meaningful connections between brands and their audiences.
+                    </p>
+                    <p class="text-lg">
+                        As the founder of VersaTech Global Solutions, I lead a team dedicated to transforming businesses through innovative digital solutions tailored to the African market.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Services Offered</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Comprehensive digital marketing solutions tailored to your brand's unique needs</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Social Media Management</h3>
+                    <p class="text-gray-600">Strategic content planning, posting, and engagement to grow your online presence and community.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-photo-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Poster & Reels Creation</h3>
+                    <p class="text-gray-600">Eye-catching visual content designed to stop the scroll and engage your audience.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Brand Identity & Strategy</h3>
+                    <p class="text-gray-600">Comprehensive brand development from logos to messaging to create a cohesive identity.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Digital Campaign Planning</h3>
+                    <p class="text-gray-600">Results-driven campaigns designed to achieve your specific marketing objectives.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Paid Ads (Meta, Google)</h3>
+                    <p class="text-gray-600">Targeted advertising campaigns that deliver measurable ROI and customer acquisition.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email Marketing</h3>
+                    <p class="text-gray-600">Strategic email sequences that nurture leads and convert subscribers into customers.</p>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Training & Digital Coaching</h3>
+                    <p class="text-gray-600">Empowering teams and entrepreneurs with digital marketing knowledge and skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Portfolio</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Selected projects showcasing my work across various industries <br> <br>
+                        <a style="background-color: #3b82f6; padding: 5px; border-radius: 5px; color: white;" href="https://drive.google.com/file/d/1M4Zg55R6vjmSHrU3zzen6-hCd-WXNLzK/view?usp=sharing">Download Porfolio pdf</a> |                         <a style="background-color: #3b82f6; padding: 5px; border-radius: 5px; color: white;" href="https://drive.google.com/drive/folders/1b-0K3GAx4AeELBN110QPSYGSXT9qo19k?usp=sharing">Extra Projects Link</a>
+
+</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 4 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="enduata logo.png" alt="Enduata TV" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Enduata TV</h3>
+                        <p class="text-gray-600 mb-4">Lead IT and content creator for a local Maasai TV station.</p>
+                        <button class="view-project-btn text-blue-600 font-medium hover:text-blue-800 transition duration-300" data-project="4">
+                            View Project Details <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nyatta Homes" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nyatta Homes</h3>
+                        <p class="text-gray-600 mb-4">Digital marketing for a luxury BnB agency in Narok.</p>
+                        <button class="view-project-btn text-blue-600 font-medium hover:text-blue-800 transition duration-300" data-project="5">
+                            View Project Details <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80" alt="Enchipai Insurance" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Enchipai Insurance</h3>
+                        <p class="text-gray-600 mb-4">Digital marketing strategy for an insurance startup.</p>
+                        <button class="view-project-btn text-blue-600 font-medium hover:text-blue-800 transition duration-300" data-project="6">
+                            View Project Details <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project 1 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="Mirida Group Ltd" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mirisa Group Ltd (Real Estate)</h3>
+                        <p class="text-gray-600 mb-4">Social media content and engagement growth strategy for a leading real estate developer.</p>
+                        <button class="view-project-btn text-blue-600 font-medium hover:text-blue-800 transition duration-300" data-project="1">
+                            View Project Details <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1498&q=80" alt="Grub n Snuck" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Grub n Snack</h3>
+                        <p class="text-gray-600 mb-4">Campus brand launch with video content and reels that drove viral engagement.</p>
+                        <button class="view-project-btn text-blue-600 font-medium hover:text-blue-800 transition duration-300" data-project="2">
+                            View Project Details <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="fohow.jpg" alt="Fohow Agency" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Fohow Agency</h3>
+                        <p class="text-gray-600 mb-4">Traditional medicine digital marketing strategy to reach modern consumers.</p>
+                        <button class="view-project-btn text-blue-600 font-medium hover:text-blue-800 transition duration-300" data-project="3">
+                            View Project Details <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-75 z-50 items-center justify-center hidden">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+            <button class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 text-2xl" id="close-modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="p-8">
+                <div id="modal-content">
+                    <!-- Content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">What Clients Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">"Denis transformed our brand visibility completely! His strategic approach to our social media presence helped us connect with our ideal customers in ways we never imagined."</p>
+                    <div class="flex items-center">
+                        <div class="h-12 w-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                            <img src="photo_2024-10-28_11-21-10.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mr David Mbiti</h4>
+                            <p class="text-gray-600">CEO, Mirisa Group Ltd</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">"His social media campaigns helped us reach our target clients fast. The video content he created for our food delivery service went viral on campus, driving a 300% increase in orders."</p>
+                    <div class="flex items-center">
+                        <div class="h-12 w-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                            <img src="enockk.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mr. Dan Mwalili</h4>
+                            <p class="text-gray-600">Founder, Grub n Snuck</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md md:col-span-2">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">"Working with Denis on our NGO's digital strategy was a game-changer. He understood our mission completely and helped us create a visual identity and social media presence that truly resonates with our community. The training sessions he conducted for our team were invaluable."</p>
+                    <div class="flex items-center">
+                        <div class="h-12 w-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                            <img src="masago jack.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Dr. Jackson Ole Masago</h4>
+                            <p class="text-gray-600">Director, ACCECIR Foundation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-blue-600 text-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-4">Let's Build Something Amazing</h2>
+            <p class="text-center text-blue-100 mb-12 max-w-2xl mx-auto">Reach out directly to talk strategy, branding, or your next campaign</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex flex-col justify-center">
+                    <a href="https://wa.me/254712165017" target="_blank" class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-lg shadow-lg transition duration-300 inline-flex items-center justify-center mb-6">
+                        <i class="fab fa-whatsapp text-2xl mr-3"></i> Chat with Me on WhatsApp
+                    </a>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-bold mb-2">Contact Info</h3>
+                        <p class="flex items-center mb-2">
+                            <i class="fas fa-envelope mr-3"></i> denisnzioka63@gmail.com
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3"></i> +254 712 165017
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-bold mb-3">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/denis-muyo-0b042a261/" class="bg-white text-blue-600 hover:bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center transition duration-300" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/muyo.ke/" class="bg-white text-blue-600 hover:bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center transition duration-300" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/muyo.ke/" class="bg-white text-blue-600 hover:bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center transition duration-300" aria-label="Twitter">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Send a Message</h3>
+                    <form id="contact-form">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <p class="mb-2">© 2025 Denis Nzioka Muyo | VersaTech Global Solutions</p>
+                <p class="text-gray-400 text-sm">Narok, Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Project modal functionality
+        const projects = {
+            4: {
+                title: 'Enduata TV',
+                subtitle: 'Maasai TV Station - Content Creator & IT Lead',
+                description: 'Serving as Lead IT and primary content creator for a local Maasai TV station. Responsibilities include news anchoring, managing social media accounts, content strategy, and technical operations. Created culturally relevant programming that increased viewership by 60% among Maasai communities.',
+                services: [
+                    'News Anchoring',
+                    'Social Media Management',
+                    'Content Strategy',
+                    'Technical Operations'
+                ],
+                results: [
+                    '60% increase in viewership',
+                    '25k+ social media followers',
+                    '100+ episodes produced'
+                ],
+                image: 'https://images.unsplash.com/photo-1570136608985-d5bf1ec0f124?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80',
+                socialLinks: [
+                    {icon: 'fab fa-facebook', url: 'https://www.facebook.com/profile.php?id=100032359342400'},
+                    {icon: 'fab fa-youtube', url: 'https://www.youtube.com/@Enduata033'}
+                ]
+            },
+            5: {
+                title: 'Nyatta Homes',
+                subtitle: 'Luxury BnB Digital Marketing',
+                description: 'Comprehensive digital marketing strategy for a premium BnB service in Narok. Developed branding materials, managed all digital channels, and implemented targeted campaigns that increased bookings by 40% year-over-year. Created video tours and influencer partnerships to showcase the unique Maasai Mara experience.',
+                services: [
+                    'Brand Strategy',
+                    'Social Media Marketing',
+                    'Influencer Partnerships',
+                    'Content Creation'
+                ],
+                results: [
+                    '40% increase in bookings',
+                    '85% occupancy rate',
+                    '200+ social media posts'
+                ],
+                image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+                socialLinks: [
+                    {icon: 'fab fa-instagram', url: 'https://www.instagram.com/nyatta_homes/'},
+                    {icon: 'fab fa-tiktok', url: 'https://www.tiktok.com/@nyattahomes'}
+                ]
+            },
+            6: {
+                title: 'Enchipai Insurance',
+                subtitle: 'Insurance Startup Digital Strategy',
+                description: 'Digital transformation strategy for an insurance startup targeting underserved communities. Developed clear messaging to explain insurance concepts, created culturally appropriate marketing materials, and implemented digital sales funnel that acquired 500+ policyholders in first 6 months.',
+                services: [
+                    'Brand Messaging',
+                    'Digital Sales Funnel',
+                    'Community Engagement',
+                    'Educational Content'
+                ],
+                results: [
+                    '500+ policyholders acquired',
+                    '80% customer retention rate',
+                    '200% ROI on digital ads'
+                ],
+                image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80',
+                socialLinks: [
+                    {icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/hope-tanyasis-831505167/'}
+                ]
+            },
+            1: {
+                title: 'Mirida Group Ltd',
+                subtitle: 'Real Estate Social Media Strategy',
+                description: 'Comprehensive digital marketing strategy for a leading real estate developer in Kenya. Created engaging content calendar, managed all social media platforms, and implemented targeted ad campaigns that resulted in a 45% increase in engagement and generated 120+ qualified leads within 3 months.',
+                services: [
+                    'Social Media Management',
+                    'Content Creation',
+                    'Paid Advertising',
+                    'Community Engagement'
+                ],
+                results: [
+                    '45% increase in engagement',
+                    '120+ qualified leads generated',
+                    '30% growth in followers in 3 months'
+                ],
+                socialLinks: [
+                    {icon: 'fab fa-facebook', url: 'https://www.facebook.com/profile.php?id=61572898242951'},
+                    {icon: 'fab fa-tiktok', url: 'https://www.tiktok.com/@mirisapropertiesltd'}                
+                ],
+                image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80'
+                
+                
+            },
+            2: {
+                title: 'Grub n Snuck',
+                subtitle: 'Campus Food Delivery Brand Launch',
+                description: 'Complete brand launch strategy for a campus food delivery startup. Developed brand identity, created viral video content (including 15+ reels), and implemented a guerrilla marketing campaign that drove rapid awareness and adoption among student populations.',
+                services: [
+                    'Brand Identity',
+                    'Video Content Creation',
+                    'Social Media Strategy',
+                    'Influencer Marketing'
+                ],
+                results: [
+                    'Viral content with 60k+ total views',
+                    '1500+ downloads in first month',
+                    '85% customer retention rate'
+                ],
+                socialLinks: [
+                    {icon: 'fab fa-instagram', url: 'https://www.instagram.com/grubnsnackofficial/'},
+                ],
+                image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1498&q=80'
+            },
+            3: {
+                title: 'Fohow Agency',
+                subtitle: 'Traditional Medicine Digital Marketing',
+                description: 'Digital transformation strategy for a traditional medicine provider. Developed culturally appropriate digital marketing materials, trained staff on digital tools, and created content that bridged traditional practices with modern communication methods to reach younger demographics.',
+                services: [
+                    'Digital Strategy',
+                    'Content Localization',
+                    'Staff Training',
+                    'Community Building'
+                ],
+                results: [
+                    '40% increase in online inquiries',
+                    '25% sales growth from new demographics',
+                    'Established social media community of 8k+'
+                ],
+                image: 'https://images.unsplash.com/photo-1584473457416-83ee45e0e0df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80'
+            }
+        };
+
+        document.querySelectorAll('.view-project-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const projectId = this.getAttribute('data-project');
+                const project = projects[projectId];
+                
+                const modalContent = document.getElementById('modal-content');
+                modalContent.innerHTML = `
+                    <div class="mb-8">
+                        <img src="${project.image}" alt="${project.title}" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">${project.title}</h3>
+                    <h4 class="text-xl text-blue-600 mb-4">${project.subtitle}</h4>
+                    <p class="text-gray-700 mb-6">${project.description}</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-3">Services Provided</h4>
+                            <ul class="list-disc pl-5">
+                                ${project.services.map(service => `<li class="mb-1">${service}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-3">Results Achieved</h4>
+                            <ul class="list-disc pl-5">
+                                ${project.results.map(result => `<li class="mb-1">${result}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+
+                    ${project.socialLinks ? `
+                    <div class="mb-6">
+                        <h4 class="font-bold text-lg mb-3">Client Social Links</h4>
+                        <div class="flex space-x-4">
+                            ${project.socialLinks.map(link => `
+                                <a href="${link.url}" target="_blank" class="bg-gray-100 hover:bg-gray-200 text-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="${link.icon}"></i>
+                                </a>
+                            `).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                        ${project.title.includes('Mirida') || project.title.includes('Grub') || project.title.includes('Fohow') ? `
+                        <a href="#" class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-images mr-2"></i> View Posters
+                        </a>
+                        <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-play-circle mr-2"></i> Watch Videos
+                        </a>
+                        ` : ''}
+                    </div>
+                    
+                    <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300" id="close-and-contact">
+                        Contact Me About Similar Projects
+                    </a>
+                `;
+                
+                document.getElementById('project-modal').classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        document.getElementById('close-modal').addEventListener('click', function() {
+            document.getElementById('project-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        document.addEventListener('click', function(e) {
+            if (e.target === document.getElementById('project-modal')) {
+                document.getElementById('project-modal').classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close modal and scroll to contact when clicking the contact button in modal
+        document.addEventListener('click', function(e) {
+            if (e.target && e.target.id === 'close-and-contact') {
+                document.getElementById('project-modal').classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the form data to a server
+            console.log('Form submitted:', { name, email, message });
+            
+            // Show success message
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Fade in animation on scroll
+        function checkScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Check on load and scroll
+        window.addEventListener('load', checkScroll);
+        window.addEventListener('scroll', checkScroll);
+    </script>
+</body>
+</html>
